@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 import EmailEditor from "react-email-editor";
+import "./CustomBuilder";
+import sample from "./sample.json";
 
 const Builder = () => {
   const emailEditorRef = useRef(null);
@@ -11,10 +13,16 @@ const Builder = () => {
     });
   };
 
+  const onDesignLoad = (data) => {
+    console.log("onDesignLoad", data);
+  };
+
   const onLoad = () => {
-    // you can load your template here;
-    // const templateJson = {};
-    // emailEditorRef.current.editor.loadDesign(templateJson);
+    emailEditorRef.current.editor.addEventListener(
+      "onDesignLoad",
+      onDesignLoad
+    );
+    emailEditorRef.current.editor.loadDesign(sample);
   };
 
   return (
