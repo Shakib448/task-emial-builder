@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import EmailEditor from "react-email-editor";
-import "./CustomBuilder";
+import { MyColorPicker } from "./CustomBuilder";
 import sample from "./sample.json";
 import styled from "styled-components";
 
@@ -36,6 +36,7 @@ const Bar = styled.div`
     cursor: pointer;
   }
 `;
+
 const Builder = () => {
   const emailEditorRef = useRef(null);
 
@@ -77,7 +78,11 @@ const Builder = () => {
       </Bar>
 
       <React.StrictMode>
-        <EmailEditor ref={emailEditorRef} onLoad={onLoad} />
+        <EmailEditor
+          ref={emailEditorRef}
+          onLoad={onLoad}
+          tools={MyColorPicker}
+        />
       </React.StrictMode>
     </Container>
   );
