@@ -13,7 +13,7 @@ const Container = styled.div`
 
 const Bar = styled.div`
   flex: 1;
-  background-color: #61dafb;
+  background-color: rgb(248, 248, 255);
   color: #000;
   padding: 10px;
   display: flex;
@@ -50,6 +50,7 @@ const Builder = () => {
     emailEditorRef.current.editor.exportHtml((data) => {
       const { design, html } = data;
       console.log("exportHtml", html);
+      console.log("exportDesign", design);
       alert("Output HTML has been logged in your developer console.");
     });
   };
@@ -69,7 +70,7 @@ const Builder = () => {
   return (
     <Container>
       <Bar>
-        <h1>React Email Editor (Demo)</h1>
+        <h1>React Email Editor </h1>
 
         <button onClick={saveDesign}>Save Design</button>
         <button onClick={exportHtml}>Export HTML</button>
