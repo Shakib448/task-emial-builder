@@ -8946,6 +8946,11 @@ react-dom@^17.0.2:
     object-assign "^4.1.1"
     scheduler "^0.20.2"
 
+react-email-editor@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-email-editor/-/react-email-editor-1.2.0.tgz#dfc0e6a19f5dfeab4c77fc2c38cd37a3acf2af6e"
+  integrity sha512-2nlHhJSwOtc1yrhOR8nAzHIqtA0tVJkj2DtjPTDvARuVuA28PffKlk45/vdRyOHERUQf+aUUgV7MZPpZj7JoZQ==
+
 react-error-overlay@^6.0.9:
   version "6.0.9"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.9.tgz#3c743010c9359608c375ecd6bc76f35d93995b0a"
