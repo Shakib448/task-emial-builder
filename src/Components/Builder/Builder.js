@@ -83,6 +83,13 @@ const Builder = () => {
           appearance={{
             theme: "dark",
           }}
+          options={{
+            id: "editor-container",
+            displayMode: "email",
+            customJS: [
+              "https://examples.unlayer.com/examples/react-custom-tool/custom.js",
+            ],
+          }}
         />
       </React.StrictMode>
     </Container>
