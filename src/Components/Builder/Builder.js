@@ -77,7 +77,13 @@ const Builder = () => {
       </Bar>
 
       <React.StrictMode>
-        <EmailEditor ref={emailEditorRef} onLoad={onLoad} />
+        <EmailEditor
+          ref={emailEditorRef}
+          onLoad={onLoad}
+          appearance={{
+            theme: "dark",
+          }}
+        />
       </React.StrictMode>
     </Container>
   );
