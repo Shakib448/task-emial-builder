@@ -83,15 +83,6 @@ const Builder = () => {
           appearance={{
             theme: "dark",
           }}
-          projectId={1071}
-          options={{
-            customJS: [
-              window.location.protocol +
-                "//" +
-                window.location.host +
-                "/custom.js",
-            ],
-          }}
         />
       </React.StrictMode>
     </Container>
