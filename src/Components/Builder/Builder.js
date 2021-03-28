@@ -76,22 +76,23 @@ const Builder = () => {
         <button onClick={exportHtml}>Export HTML</button>
       </Bar>
 
-      <React.StrictMode>
-        <EmailEditor
-          ref={emailEditorRef}
-          onLoad={onLoad}
-          appearance={{
-            theme: "dark",
-          }}
-          options={{
-            id: "editor-container",
-            displayMode: "email",
-            customJS: [
-              "https://examples.unlayer.com/examples/react-custom-tool/custom.js",
-            ],
-          }}
-        />
-      </React.StrictMode>
+      <EmailEditor
+        ref={emailEditorRef}
+        onLoad={onLoad}
+        appearance={{
+          theme: "dark",
+        }}
+        projectId={1071}
+        minHeight="100vh"
+        options={{
+          customJS: [
+            window.location.protocol +
+              "//" +
+              window.location.host +
+              "/custom.js",
+          ],
+        }}
+      />
     </Container>
   );
 };
