@@ -123,10 +123,10 @@ const Builder = () => {
         </div>
 
         <div className="template" onClick={() => loadTemplate(3)}>
-          <img src="https://i.ibb.co/sgLJsFH/Screenshot-1.png" alt="sjon" />
+          <img src="https://i.ibb.co/sgLJsFH/Screenshot-1.png" alt="json" />
         </div>
         <div className="template" onClick={() => loadTemplate(4)}>
-          <img src="https://i.ibb.co/QpBZXty/Screenshot-2.png" alt="sjon" />
+          <img src="https://i.ibb.co/QpBZXty/Screenshot-2.png" alt="json" />
         </div>
       </div>
     </Container>
