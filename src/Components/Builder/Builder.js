@@ -43,6 +43,7 @@ const Bar = styled.div`
 const Builder = () => {
   const emailEditorRef = useRef(null);
   const [load, setLoad] = useState([]);
+  console.log(emailEditorRef);
 
   const saveDesign = () => {
     emailEditorRef.current.editor.saveDesign((design) => {
@@ -99,18 +100,19 @@ const Builder = () => {
         <EmailEditor
           ref={emailEditorRef}
           onLoad={loadTemplate}
+          options={{
+            customCSS: [
+              `
+            .sc-higXBA.jSEyeM.blockbuilder-options-panel.blockbuilder-slide-right-enter-done {
+              left: -70px !important;
+            }
+            `,
+            ],
+          }}
           appearance={{
             theme: "dark",
           }}
           minHeight="100vh"
-          options={{
-            customJS: [
-              window.location.protocol +
-                "//" +
-                window.location.host +
-                "/custom.js",
-            ],
-          }}
         />
       </React.StrictMode>
       {load.length !== 0 && <TemplatePicker loadTemplate={loadTemplate} />}

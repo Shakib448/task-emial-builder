@@ -17,8 +17,11 @@ code {
 div#templates {
   display: flex;
 }
-nav flex-column nav-tabs {
-  position: relative !important;
+.u_body {
+  max-width: 60vw;
+}
+div#u_body {
+  max-width: 61vw;
 }
 
 .template__btn {
@@ -30,7 +33,7 @@ nav flex-column nav-tabs {
   position: absolute;
   top: 290px;
   right: 2px;
-  z-index: 100;
+  /* z-index: 5; */
 }
 
 .template__btn:hover {
