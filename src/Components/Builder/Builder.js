@@ -100,15 +100,6 @@ const Builder = () => {
         <EmailEditor
           ref={emailEditorRef}
           onLoad={loadTemplate}
-          options={{
-            customCSS: [
-              `
-            .sc-higXBA.jSEyeM.blockbuilder-options-panel.blockbuilder-slide-right-enter-done {
-              left: -70px !important;
-            }
-            `,
-            ],
-          }}
           appearance={{
             theme: "dark",
           }}
