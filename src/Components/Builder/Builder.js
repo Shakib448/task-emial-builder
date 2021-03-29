@@ -21,6 +21,7 @@ const Bar = styled.div`
   padding: 10px;
   display: flex;
   max-height: 40px;
+  flex-wrap: wrap;
   h1 {
     flex: 1;
     font-size: 16px;
@@ -89,12 +90,15 @@ const Builder = () => {
 
   return (
     <Container>
-      <Bar>
-        <h1>React Email Editor </h1>
+      {load.length !== 0 && (
+        <Bar>
+            <h1>React Email Editor </h1>
 
-        <button onClick={saveDesign}>Save Design</button>
-        <button onClick={exportHtml}>Export HTML</button>
-      </Bar>
+            <TemplatePicker loadTemplate={loadTemplate} />
+            <button onClick={saveDesign}>Save Design</button>
+            <button onClick={exportHtml}>Export HTML</button>
+        </Bar>
+      )}
 
       <React.StrictMode>
         <EmailEditor
@@ -106,7 +110,6 @@ const Builder = () => {
           minHeight="100vh"
         />
       </React.StrictMode>
-      {load.length !== 0 && <TemplatePicker loadTemplate={loadTemplate} />}
     </Container>
   );
 };
