@@ -1,0 +1,115 @@
+{
+  "thumbnail": "https://i.ibb.co/QpBZXty/Screenshot-2.png",
+  "data": {
+    "counters": {
+      "u_column": 1,
+      "u_row": 1,
+      "u_content_heading": 1,
+      "u_content_image": 1
+    },
+    "body": {
+      "rows": [
+        {
+          "cells": [1],
+          "columns": [
+            {
+              "contents": [
+                {
+                  "type": "heading",
+                  "values": {
+                    "containerPadding": "10px",
+                    "_meta": {
+                      "htmlID": "u_content_heading_1",
+                      "htmlClassNames": "u_content_heading"
+                    },
+                    "selectable": true,
+                    "draggable": true,
+                    "duplicatable": true,
+                    "deletable": true,
+                    "headingType": "h1",
+                    "fontFamily": {
+                      "label": "Arial",
+                      "value": "arial,helvetica,sans-serif"
+                    },
+                    "fontSize": "16px",
+                    "color": "#000000",
+                    "textAlign": "left",
+                    "lineHeight": "140%",
+                    "linkStyle": {
+                      "inherit": true,
+                      "linkColor": "#0000ee",
+                      "linkHoverColor": "#0000ee",
+                      "linkUnderline": true,
+                      "linkHoverUnderline": true
+                    },
+                    "hideDesktop": false,
+                    "hideMobile": false,
+                    "text": "Hi {name}, <strong><-- Contact's first name</strong> <br/> <br/>{first line}<strong> <-- Personalized first sentence custom to the target with a specific/genuine compliment</strong> <br/> <br/>{who you are and what you do in 1 sentence} <strong><-- Make it specific to them, short, and sweet</strong><br/> <br/>{one sentence case study}<strong> <--- Recently worked with (company in their field) to help them (what you did for them) which resulted in (positive outcome with statistics/results)</strong><br/> <br/>{CTA} <strong><--- Call to action (get on the phone)</strong><br/> <br/>{signature}<strong> <--- Email sig with name, company, address, phone number, website, etc.</strong><br/> <br/><br/> Example:<br/> <br/>Hi Ben,<br/> <br/>Love the fact that you found your niche & honed in on your expertise with Drupal. Great that you have a number of different options for your clients such as packages and tiers of pricing or a comprehensive book as well!<br/> <br/>My name is Jacob and I help website owners increase their authority with managed white hat link outreach campaigns.<br/> <br/>Recently worked with Rankings.io to help them land a guest post on Webris, an SEO agency that's been featured on Backlinko, Neil Patel, Ahrefs, Moz, Search Engine Land, Authority Hackers, and more.<br/> <br/>Would love to help your clients get links from authorities in their space too. Are you open to discussing a partnership?<br/> <br/>Thanks,<br/>{email signature}<br/> <br/>This strategy is largely based on <strong>Alex Berman’s cold email YouTube channel videos.</strong>"
+                  }
+                }
+              ],
+              "values": {
+                "backgroundColor": "",
+                "padding": "0px",
+                "border": {},
+                "_meta": {
+                  "htmlID": "u_column_1",
+                  "htmlClassNames": "u_column"
+                }
+              }
+            }
+          ],
+          "values": {
+            "displayCondition": null,
+            "columns": false,
+            "backgroundColor": "",
+            "columnsBackgroundColor": "",
+            "backgroundImage": {
+              "url": "",
+              "fullWidth": true,
+              "repeat": false,
+              "center": true,
+              "cover": false
+            },
+            "padding": "0px",
+            "hideDesktop": false,
+            "hideMobile": false,
+            "noStackMobile": false,
+            "_meta": { "htmlID": "u_row_1", "htmlClassNames": "u_row" },
+            "selectable": true,
+            "draggable": true,
+            "duplicatable": true,
+            "deletable": true
+          }
+        }
+      ],
+      "values": {
+        "backgroundColor": "#e7e7e7",
+        "backgroundImage": {
+          "url": "",
+          "fullWidth": true,
+          "repeat": false,
+          "center": true,
+          "cover": false
+        },
+        "contentWidth": "500px",
+        "contentAlign": "center",
+        "fontFamily": {
+          "label": "Arial",
+          "value": "arial,helvetica,sans-serif"
+        },
+        "preheaderText": "",
+        "linkStyle": {
+          "body": true,
+          "linkColor": "#0000ee",
+          "linkHoverColor": "#0000ee",
+          "linkUnderline": true,
+          "linkHoverUnderline": true
+        },
+        "_meta": { "htmlID": "u_body", "htmlClassNames": "u_body" }
+      }
+    },
+    "schemaVersion": 5
+  },
+  "images": []
+}
