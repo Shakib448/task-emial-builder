@@ -36,8 +36,8 @@ export default function TransitionsModal({ loadTemplate }) {
   return (
     <div>
       <button type="button" onClick={handleOpen} className="template__btn">
-        <TextFieldsIcon /> <br />
-        Template
+        <TextFieldsIcon style={{ fontSize: 24 }} /> <br />
+        <span>Template</span>
       </button>
       <Modal
         aria-labelledby="transition-modal-title"
