@@ -5,6 +5,7 @@ import styled from "styled-components";
 import sample2 from "../../Templates/Starter Template.json";
 import sample3 from "../../Templates/{Company Name} + {Your Company}.json";
 import sample4 from "../../Templates/Template framework by twinweseo.json";
+import TemplatePicker from "../TemplatePicker/TemplatePicker";
 
 const Container = styled.div`
   display: flex;
@@ -107,28 +108,7 @@ const Builder = () => {
           ],
         }}
       />
-      <div id="templates">
-        <div className="template" onClick={() => loadTemplate(1)}>
-          <img
-            src="https://api.unlayer.com/v1/editor/11721/templates/28497/thumbnail?t=1613096809146"
-            alt="json"
-          />
-        </div>
-
-        <div className="template" onClick={() => loadTemplate(2)}>
-          <img
-            src="https://api.unlayer.com/v1/editor/11721/templates/28496/thumbnail?t=1613096676088"
-            alt="json"
-          />
-        </div>
-
-        <div className="template" onClick={() => loadTemplate(3)}>
-          <img src="https://i.ibb.co/sgLJsFH/Screenshot-1.png" alt="json" />
-        </div>
-        <div className="template" onClick={() => loadTemplate(4)}>
-          <img src="https://i.ibb.co/QpBZXty/Screenshot-2.png" alt="json" />
-        </div>
-      </div>
+      <TemplatePicker loadTemplate={loadTemplate} />
     </Container>
   );
 };
