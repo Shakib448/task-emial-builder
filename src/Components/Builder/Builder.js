@@ -1,7 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import EmailEditor from "react-email-editor";
-import sample from "./sample.json";
+import sample1 from "./sample.json";
 import styled from "styled-components";
+import sample2 from "../../Templates/Starter Template.json";
+import sample3 from "../../Templates/{Company Name} + {Your Company}.json";
+import sample4 from "../../Templates/Template framework by twinweseo.json";
+import TemplatePicker from "../TemplatePicker/TemplatePicker";
 
 const Container = styled.div`
   display: flex;
@@ -38,6 +42,7 @@ const Bar = styled.div`
 
 const Builder = () => {
   const emailEditorRef = useRef(null);
+  const [load, setLoad] = useState([]);
 
   const saveDesign = () => {
     emailEditorRef.current.editor.saveDesign((design) => {
@@ -57,14 +62,28 @@ const Builder = () => {
 
   const onDesignLoad = (data) => {
     console.log("onDesignLoad", data);
+    if (data) {
+      setLoad(data);
+    }
   };
 
-  const onLoad = () => {
+  const loadTemplate = (id) => {
     emailEditorRef.current.editor.addEventListener(
       "onDesignLoad",
       onDesignLoad
     );
-    emailEditorRef.current.editor.loadDesign(sample);
+    if (id === 1) {
+      emailEditorRef.current.editor.loadDesign(sample1);
+    }
+    if (id === 2) {
+      emailEditorRef.current.editor.loadDesign(sample2.data);
+    }
+    if (id === 3) {
+      emailEditorRef.current.editor.loadDesign(sample3.data);
+    }
+    if (id === 4) {
+      emailEditorRef.current.editor.loadDesign(sample4.data);
+    }
   };
 
   return (
@@ -77,8 +96,25 @@ const Builder = () => {
       </Bar>
 
       <React.StrictMode>
-        <EmailEditor ref={emailEditorRef} onLoad={onLoad} />
+        <EmailEditor
+          ref={emailEditorRef}
+          onLoad={loadTemplate}
+          appearance={{
+            theme: "dark",
+          }}
+          projectId={1071}
+          minHeight="100vh"
+          options={{
+            customJS: [
+              window.location.protocol +
+                "//" +
+                window.location.host +
+                "/custom.js",
+            ],
+          }}
+        />
       </React.StrictMode>
+      {load.length !== 0 && <TemplatePicker loadTemplate={loadTemplate} />}
     </Container>
   );
 };

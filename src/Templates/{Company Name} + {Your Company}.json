@@ -1,0 +1,115 @@
+{
+  "thumbnail": "https://i.ibb.co/sgLJsFH/Screenshot-1.png",
+  "data": {
+    "counters": {
+      "u_column": 1,
+      "u_row": 1,
+      "u_content_heading": 1,
+      "u_content_image": 1
+    },
+    "body": {
+      "rows": [
+        {
+          "cells": [1],
+          "columns": [
+            {
+              "contents": [
+                {
+                  "type": "heading",
+                  "values": {
+                    "containerPadding": "10px",
+                    "_meta": {
+                      "htmlID": "u_content_heading_1",
+                      "htmlClassNames": "u_content_heading"
+                    },
+                    "selectable": true,
+                    "draggable": true,
+                    "duplicatable": true,
+                    "deletable": true,
+                    "headingType": "h1",
+                    "fontFamily": {
+                      "label": "Arial",
+                      "value": "arial,helvetica,sans-serif"
+                    },
+                    "fontSize": "22px",
+                    "color": "#000000",
+                    "textAlign": "left",
+                    "lineHeight": "140%",
+                    "linkStyle": {
+                      "inherit": true,
+                      "linkColor": "#0000ee",
+                      "linkHoverColor": "#0000ee",
+                      "linkUnderline": true,
+                      "linkHoverUnderline": true
+                    },
+                    "hideDesktop": false,
+                    "hideMobile": false,
+                    "text": "Hi {name},  <br/> <br/>   My name is {name} with {Your Company}.<br/> <br/>       We help {specific company type} with {one liner}.<br/> <br/>       I wanted to learn how you handle {thing your company handles} at {Company Name} and show you what we're working on.<br/> <br/>        Are you available for a brief call at {time options}."
+                  }
+                }
+              ],
+              "values": {
+                "backgroundColor": "",
+                "padding": "0px",
+                "border": {},
+                "_meta": {
+                  "htmlID": "u_column_1",
+                  "htmlClassNames": "u_column"
+                }
+              }
+            }
+          ],
+          "values": {
+            "displayCondition": null,
+            "columns": false,
+            "backgroundColor": "",
+            "columnsBackgroundColor": "",
+            "backgroundImage": {
+              "url": "",
+              "fullWidth": true,
+              "repeat": false,
+              "center": true,
+              "cover": false
+            },
+            "padding": "0px",
+            "hideDesktop": false,
+            "hideMobile": false,
+            "noStackMobile": false,
+            "_meta": { "htmlID": "u_row_1", "htmlClassNames": "u_row" },
+            "selectable": true,
+            "draggable": true,
+            "duplicatable": true,
+            "deletable": true
+          }
+        }
+      ],
+      "values": {
+        "backgroundColor": "#e7e7e7",
+        "backgroundImage": {
+          "url": "",
+          "fullWidth": true,
+          "repeat": false,
+          "center": true,
+          "cover": false
+        },
+        "contentWidth": "500px",
+        "contentAlign": "center",
+        "fontFamily": {
+          "label": "Arial",
+          "value": "arial,helvetica,sans-serif"
+        },
+        "preheaderText": "",
+        "linkStyle": {
+          "body": true,
+          "linkColor": "#0000ee",
+          "linkHoverColor": "#0000ee",
+          "linkUnderline": true,
+          "linkHoverUnderline": true
+        },
+        "_meta": { "htmlID": "u_body", "htmlClassNames": "u_body" }
+      }
+    },
+    "schemaVersion": 5
+  },
+  "images": []
+}
