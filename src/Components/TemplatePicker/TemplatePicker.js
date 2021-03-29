@@ -51,7 +51,7 @@ export default function TransitionsModal({ loadTemplate }) {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <div id="templates">
+            <div id="templates" onClick={() => setOpen(!open)}>
               <div className="template" onClick={() => loadTemplate(1)}>
                 <img
                   src="https://api.unlayer.com/v1/editor/11721/templates/28497/thumbnail?t=1613096809146"
