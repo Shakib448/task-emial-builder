@@ -1,3 +1,3 @@
 # Email Drag And Drop Builder
 
-<img src='./task-email-builder.png'>
+<img src='./email-builder.png'>
