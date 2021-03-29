@@ -43,6 +43,7 @@ const Bar = styled.div`
 const Builder = () => {
   const emailEditorRef = useRef(null);
   const [load, setLoad] = useState([]);
+  console.log(emailEditorRef);
 
   const saveDesign = () => {
     emailEditorRef.current.editor.saveDesign((design) => {
@@ -88,32 +89,28 @@ const Builder = () => {
 
   return (
     <Container>
-      <Bar>
-        <h1>React Email Editor </h1>
-
-        <button onClick={saveDesign}>Save Design</button>
-        <button onClick={exportHtml}>Export HTML</button>
-      </Bar>
+      {load.length !== 0 && (
+        <>
+          <Bar>
+            <h1>React Email Editor </h1>
+            <TemplatePicker loadTemplate={loadTemplate} />
+            <button onClick={saveDesign}>Save Design</button>
+            <button onClick={exportHtml}>Export HTML</button>
+          </Bar>
+        </>
+      )}
 
       <React.StrictMode>
         <EmailEditor
           ref={emailEditorRef}
           onLoad={loadTemplate}
+          projectId={1071}
           appearance={{
             theme: "dark",
           }}
           minHeight="100vh"
-          options={{
-            customJS: [
-              window.location.protocol +
-                "//" +
-                window.location.host +
-                "/custom.js",
-            ],
-          }}
         />
       </React.StrictMode>
-      {load.length !== 0 && <TemplatePicker loadTemplate={loadTemplate} />}
     </Container>
   );
 };

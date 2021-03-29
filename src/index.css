@@ -17,22 +17,3 @@ code {
 div#templates {
   display: flex;
 }
-nav flex-column nav-tabs {
-  position: relative !important;
-}
-
-.template__btn {
-  color: #939496;
-  background-color: transparent;
-  outline: 0;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 290px;
-  right: 2px;
-  z-index: 100;
-}
-
-.template__btn:hover {
-  color: #b6b8b9;
-}

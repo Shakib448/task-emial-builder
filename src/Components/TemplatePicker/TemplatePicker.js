@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
-import TextFieldsIcon from "@material-ui/icons/TextFields";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -34,10 +33,9 @@ export default function TransitionsModal({ loadTemplate }) {
   };
 
   return (
-    <div>
-      <button type="button" onClick={handleOpen} className="template__btn">
-        <TextFieldsIcon /> <br />
-        <span>Template</span>
+    <>
+      <button type="button" onClick={handleOpen}>
+        Template
       </button>
       <Modal
         aria-labelledby="transition-modal-title"
@@ -84,6 +82,6 @@ export default function TransitionsModal({ loadTemplate }) {
           </div>
         </Fade>
       </Modal>
-    </div>
+    </>
   );
 }
