@@ -28,7 +28,7 @@ nav flex-column nav-tabs {
   border: none;
   cursor: pointer;
   position: absolute;
-  top: 350px;
+  top: 290px;
   right: 2px;
   z-index: 100;
 }

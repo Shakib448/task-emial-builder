@@ -102,7 +102,6 @@ const Builder = () => {
           appearance={{
             theme: "dark",
           }}
-          projectId={1071}
           minHeight="100vh"
           options={{
             customJS: [
