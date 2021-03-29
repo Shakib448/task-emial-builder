@@ -17,9 +17,3 @@ code {
 div#templates {
   display: flex;
 }
-.u_body {
-  max-width: 60vw;
-}
-div#u_body {
-  max-width: 61vw;
-}
