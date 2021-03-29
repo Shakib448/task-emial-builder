@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import EmailEditor from "react-email-editor";
 import sample1 from "./sample.json";
 import styled from "styled-components";
@@ -42,6 +42,7 @@ const Bar = styled.div`
 
 const Builder = () => {
   const emailEditorRef = useRef(null);
+  const [load, setLoad] = useState([]);
 
   const saveDesign = () => {
     emailEditorRef.current.editor.saveDesign((design) => {
@@ -61,6 +62,9 @@ const Builder = () => {
 
   const onDesignLoad = (data) => {
     console.log("onDesignLoad", data);
+    if (data) {
+      setLoad(data);
+    }
   };
 
   const loadTemplate = (id) => {
@@ -91,24 +95,26 @@ const Builder = () => {
         <button onClick={exportHtml}>Export HTML</button>
       </Bar>
 
-      <EmailEditor
-        ref={emailEditorRef}
-        onLoad={loadTemplate}
-        appearance={{
-          theme: "dark",
-        }}
-        projectId={1071}
-        minHeight="100vh"
-        options={{
-          customJS: [
-            window.location.protocol +
-              "//" +
-              window.location.host +
-              "/custom.js",
-          ],
-        }}
-      />
-      <TemplatePicker loadTemplate={loadTemplate} />
+      <React.StrictMode>
+        <EmailEditor
+          ref={emailEditorRef}
+          onLoad={loadTemplate}
+          appearance={{
+            theme: "dark",
+          }}
+          projectId={1071}
+          minHeight="100vh"
+          options={{
+            customJS: [
+              window.location.protocol +
+                "//" +
+                window.location.host +
+                "/custom.js",
+            ],
+          }}
+        />
+      </React.StrictMode>
+      {load.length !== 0 && <TemplatePicker loadTemplate={loadTemplate} />}
     </Container>
   );
 };

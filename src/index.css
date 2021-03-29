@@ -30,6 +30,7 @@ nav flex-column nav-tabs {
   position: absolute;
   top: 350px;
   right: 2px;
+  z-index: 100;
 }
 
 .template__btn:hover {

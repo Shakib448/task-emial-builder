@@ -36,7 +36,7 @@ export default function TransitionsModal({ loadTemplate }) {
   return (
     <div>
       <button type="button" onClick={handleOpen} className="template__btn">
-        <TextFieldsIcon style={{ fontSize: 24 }} /> <br />
+        <TextFieldsIcon /> <br />
         <span>Template</span>
       </button>
       <Modal
